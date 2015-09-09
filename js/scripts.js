@@ -11,9 +11,13 @@ var pigLatin = function(userInput) {
       || inputArray[0] === ("u")) {
       inputArray.push('ay');
       break;
+    } else if ( inputArray[0] === ("q") && inputArray[1] === ("u")){
+      var currentLetterq = inputArray.splice(0, 1);
+      var currentLetteru = inputArray.splice(0, 1)
+      inputArray.push(currentLetterq);
+      inputArray.push(currentLetteru);
     } else {
       var currentLetter = inputArray.splice(0, 1);
-      console.log(currentLetter);
       inputArray.push(currentLetter);
     }
   }
