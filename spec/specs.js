@@ -23,7 +23,16 @@ describe('pigLatin', function() {
     expect(pigLatin("quit")).to.equal("itquay");
   });
 
-  it("does not move 'qu' if 'qu' does not begin the word", function() {
+  it("does move 'qu' if 'qu' does not begin the word", function() {
     expect(pigLatin("squeal")).to.equal("ealsquay");
   });
+
+  it("treats y as a consonant if it is the first letter", function() {
+    expect(pigLatin("yo")).to.equal("oyay");
+  })
+
+  it("treats y as a vowel unless it is the first letter", function() {
+    expect(pigLatin("chymist")).to.equal("ymistchay");
+  });
+
 });
