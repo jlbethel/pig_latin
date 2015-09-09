@@ -7,5 +7,7 @@ describe('pigLatin', function() {
     expect(pigLatin("pig")).to.equal("igpay");
   });
 
-
+  it("moves successive consonants to end of word and adds ay", function() {
+    expect(pigLatin("track")).to.equal("acktray");
+  })
 });
