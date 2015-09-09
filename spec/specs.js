@@ -3,9 +3,9 @@ describe('pigLatin', function() {
     expect(pigLatin("any")).to.equal("anyay");
   });
 
-  // it("moves first letter plus ay to end of array", function() {
-  //   expect(pigLatin("pig")).to.equal("igpay");
-  // });
+  it("if first letter of word is a consonat move first letter plus ay to end of array", function() {
+    expect(pigLatin("pig")).to.equal("igpay");
+  });
 
 
 });
