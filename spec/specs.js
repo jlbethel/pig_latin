@@ -35,4 +35,8 @@ describe('pigLatin', function() {
     expect(pigLatin("chymist")).to.equal("ymistchay");
   });
 
+  it("translates phrase", function() {
+    expect(pigLatin("any pig can quit")).to.equal("anyay igpay ancay itquay");
+  });
+
 });
